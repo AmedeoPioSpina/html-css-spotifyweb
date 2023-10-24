@@ -6,4 +6,24 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: red;
+    height: 89vh;
+    width: 1.75rem;
+}
+
+main {
+    background-color: green;
+    width: calc(100vw - 1.75rem);
+    height: 89vh;
+}
+
+footer {
+    background-color: blueviolet;
+    height: 11vh;
+    width: 100vw;
 }
