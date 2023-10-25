@@ -21,7 +21,7 @@ footer {
     background-color: red;
     bottom: 0;
     display: flex;
-    height: 11vh;
+    height: 5.7rem;
     justify-content: space-between;
     position: fixed;
     width: 100vw;
@@ -29,7 +29,7 @@ footer {
 
 header {
     background-color: black;
-    height: 89.07vh;
+    height: calc(100vh - 5.7rem);
     width: 3.2rem;
 }
 
@@ -46,7 +46,7 @@ header {
 main {
     background-color: green;
     width: calc(100vw - 3.2rem);
-    height: 89.07vh;
+    height: calc(100vh - 5.7rem);
 }
 
 nav {
@@ -69,6 +69,10 @@ nav p {
 
 .nav-sez img {
     width: 25.5px;
+}
+
+.playlist-container {
+    display: none;
 }
 
 .profile-container {
@@ -97,6 +101,37 @@ nav p {
     width: 1.5rem;
 }
 
+.song-in-progress {
+    display: flex;
+}
+
+.song-in-progress i {
+    color: #717171;
+}
+
+.song-in-progress img{
+    margin: 0 0.65rem;
+    width: 2.3rem;
+}
+
+.song-in-progress-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.7rem;
+    justify-content: center;
+}
+
+.song-in-progress-subtitle {
+    color: #717171;
+    font-size: 0.65rem;
+}
+
+.song-in-progress-title {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
 @media screen and (min-width: 768px ){
     .create-playlist {
         align-items: center;
@@ -118,6 +153,10 @@ nav p {
 
     header{
         width: 14.4rem;
+    }
+
+    main {
+        width: calc(100vw - 14.4rem);
     }
 
     nav{
@@ -151,7 +190,7 @@ nav p {
         width: 8rem;
     }
 
-    .profile-containter {
+    .profile-container {
         width: 100%;
     }
 
@@ -183,6 +222,10 @@ nav p {
 
     .profile-container div:first-child, .profile-container div:last-child {
         margin: 0 1.25rem;
+    }
+
+    .playlist-container {
+        display: inline;
     }
 
     .playlist-container p {
