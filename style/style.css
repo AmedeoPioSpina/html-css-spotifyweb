@@ -101,10 +101,31 @@ nav p {
     width: 1.5rem;
 }
 
-.song-in-progress {
+.song-handler {
     display: flex;
+    justify-content: center;
 }
 
+.songs-handler-container {
+    flex-basis: 40%;
+}
+
+.songs-handler-play-container {
+    margin: 0 2rem;
+}
+
+.song-in-progress {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.song-handler i {
+    font-size: 1.2rem;
+}
+
+i.songs-handler-play {
+    font-size: 1.8rem;
+}
 .song-in-progress i {
     color: #717171;
 }
@@ -130,6 +151,14 @@ nav p {
     color: white;
     font-size: 0.75rem;
     font-weight: 800;
+}
+
+.song-sound-handler-container {
+    flex-basis: 25%;
+}
+
+.song-status {
+    display: flex;
 }
 
 @media screen and (min-width: 768px ){
