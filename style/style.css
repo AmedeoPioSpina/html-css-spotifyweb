@@ -48,10 +48,90 @@ header {
 }
 
 main {
-    background-color: green;
+    background-color: #141922;
     width: calc(100vw - 3.2rem);
     height: calc(100vh - 5.7rem);
     overflow-y: auto;
+}
+
+.main-contents-container {
+}
+
+.main-fixed-container {
+    width: calc(100vw - 3.2rem);
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+}
+
+.main-fixed-container button {
+    float: right;
+}
+
+.main-genre ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+
+.main-genre li {
+    color: #717171;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    margin:  1.5rem 0.7rem;
+}
+
+.circular-img-border {
+    border-radius: 25rem;
+}
+
+.selections-container {
+    margin: 1.5rem 1.2rem;
+}
+
+.selections-container ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.selections-container h2 {
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.selections-container img {
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.selections-container li {
+    width: 45%;
+    text-align: center;
+}
+
+.selections-container h3 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.4rem;
+}
+
+.selections-container p {
+    font-size: 0.6rem;
+    color: #717171;
+}
+
+.selection-title {
+    margin-bottom: 1.6rem;
+}
+
+.selection-title h2 {
+    margin-bottom: 0.6rem;
 }
 
 nav {
@@ -322,5 +402,14 @@ i.songs-handler-play {
     .playlist-container li{
         line-height: 1.9rem;
         padding-left: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .selections-container ul {
+        justify-content: start;
+    }
+    .selections-container li {
+        width: 14.5%;
     }
 }
